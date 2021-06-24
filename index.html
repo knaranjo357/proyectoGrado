@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>2021_Tesis_Naranjo_Kevin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>PROYECTO DE GRADO</h1>
+								<p>ANÁLISIS DE CORRELACIÓN ENTRE LA CONTAMINACIÓN DEL AIRE Y EL IMPACTO EN TWITTER PARA LA CIUDAD DE BUCARAMANGA APLICANDO ANÁLISIS DE SERIES TEMPORALES, EXTRACCIÓN Y PROCESAMIENTO DE LENGUAJE NATURAL</p>
+								<P>AUTOR</P>
+								<p>KEVIN ALEJANDRO NARANJO REYES</p>
+								<p>DIRECTOR</p>
+								<p>PHD. CARLOS JULIO ARIZMENDI PEREIRA</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#objetivos">OBJETIVOS</a></li>
+								<li><a href="#metodologia">METODOLOGÍA</a></li>
+								<li><a href="#ica">ICA</a></li>
+								<li><a href="#tweeter">TWITTER</a></li>
+								<li><a href="#redux">REDUCCION DE PALABRAS</a></li>
+								<li><a href="#modelo">SELECCION MODELO</a></li>
+
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- objetivos -->
+						<article id="objetivos">
+							<h2 class="major">OBJETIVO GENERAL </h2>
+							<p>Generar un modelo de contaminación del aire usando las publicaciones realizadas por las personas en Bucaramanga a partir de datos extraídos en Twitter</p>
+							<h2 class="major">OBJETIVOS ESPECÍFICOS  </h2>
+							<li>Registrar la información relacionada con contaminación del aire por medio de una revisión sistemática de la literatura</li>
+							<li>Obtener los datos históricos de material particulado que se han obtenido con las estaciones meteorológicas distribuidas por la ciudad</li>
+							<li>Implementar un algoritmo automatizado para la extracción y transformación de Tweets haciendo una comparación entre las diferentes posibilidades que se encuentran</li>
+							<li>Analizar la percepción de las personas en la ciudad de Bucaramanga sobre la calidad del aire usando técnicas de procesamiento de lenguaje natural separando las publicaciones en palabras.</li>
+							<li>Correlacionar las palabras de las publicaciones con la calidad del aire que hay en la ciudad de Bucaramanga para identificar las palabras más relevantes</li>
+							<li>Seleccionar las palabras y el clasificador de Deep Learning para la implementación del modelo</li>
+						</article>
+						<!-- metodologia -->
+						<article id="metodologia">
+							<h2 class="major">METODOLOGÍA</h2>
+							<span class="image main"><img src="images/metologia.png" alt="" /></span>
+							<p>La metodología en la que se basa el proyecto es una unión y adaptación entre la metodología de Stanford d. School Design Thinking Process y la metodologia ETL (Extract- Transform- Load) que es muy utilizado en el análisis de datos por que cumple con las 3 funciones principales de un proyecto de ciencia de datos</p>
+							<h2>ETAPA 1 PROBLEMA</h2>
+							<p>la empresa K2 ingeniería desea determinar la posible relación entre la información publicada en Internet y el comportamiento contaminante del aire registrados por las estaciones que monitorean la calidad de aire con las que se cuentan en la ciudad. Se espera que este proyecto identifique los aspectos requeridos en materia de divulgación a la comunidad, así como las palabras más frecuentemente divulgadas</p>
+							<h2>ETAPA 2 DEFINIR</h2>
+							<h3>DISEÑO DE LA INVESTIGACIÓN</h3>
+							<p>Se procederá a realizar una investigación de tipo mixta la cual tendrá un enfoque cualitativo que analiza las intenciones de dar la percepción sobre calidad del aire en los textos de las publicaciones y un enfoque cuantitativo que busca encontrar la correlación que hay entre la percepción de los textos publicados en internet y el valor real del índice de calidad del aire para esto se realiza una investigación longitudinal.</p>
+							<h3>ENFOQUE DE LA INVESTIGACIÓN</h3>
+							<p>En cuanto a el enfoque cualitativo utiliza la recolección de publicaciones y los procesa con técnicas de procesamiento de lenguaje natural para la extracción percepción de la calidad del aire de las personas en Bucaramanga con técnicas de procesamiento de lenguaje natural. Y en cuanto al enfoque cuantitativo utiliza la recolección y el análisis de datos proporcionados por la empresa K2 ingeniería y AMB. y con apoyo de la Resolución 2254 de 2017 para clasificar el índice de calidad del aire</p>
+							<h3>POBLACIÓN</h3>
+							<p>
+								En este caso la población estará conformada por dos grupos:
+								<br>
+								-las personas de Bucaramanga con acceso a internet que publican temas relacionados con calidad del aire
+								<br>
+								-PM10, PM2.5 en la ciudad de Bucaramanga
+							</p>
+							<h3>MUESTRA Y MUESTREO</h3>
+							<p>
+								En este trabajo se utilizará el método de muestreo no probabilístico, en el cual se toman los casos o unidades que estén disponibles en un momento dado. 
+								Puesto que lo que se realizara es extraer los datos que estén al alcance en Twitter a partir del primero de enero del 2018.
+								De la misma forma se solicita a la empresa K2 ingeniería y AMB para que compartan los datos históricos de PM10, PM2.5
+							</p>
+							<h3>TÉCNICAS DE RECOLECCIÓN DE DATOS</h3>
+							<p>técnicas automatizadas de scraping web</p>
+							<h3>INSTRUMENTOS DE RECOLECCIÓN DE DATOS</h3>
+							<p>Es cualquier recurso con el que podamos extraer información. De este modo el instrumento sintetiza en si toda la labor de la investigación, resume los aportes del marco teórico al seleccionar datos corresponden a los indicadores y, por lo tanto, a las variables o conceptos utilizados. El instrumento será un script diseñado para recibir las direcciones de las páginas web que se deben extraer usando el lenguaje de Python y las librerías especializadas en la extracción de información de páginas web</p>
+							<h3>TÉCNICAS DE PROCESAMIENTO DE DATOS</h3>
+							<p>las técnicas que se trabajara en el procesamiento de los datos será la estadística descriptica con técnicas de machine learning para el procesamiento de lenguaje natural y herramientas de análisis estadístico. Que consiste en conjuntos de procedimientos que tienen por objeto presentar masas de datos por medio de tablas, gráficos y medidas de resumen</p>
+						</article>
+
+						<!-- ica -->
+						<article id="ica">
+							<h2 class="major">ETAPA 3 <br> INDICE DE CALIDAD DEL AIRE <br>(ICA)</h2>
+							<h3>DATOS RECOGIDOS POR LOS SISTEMAS DE VIGILANCIA DE CALIDAD DEL AIRE</h3>
+							<h4>Estación lagos 1 Calle 29 No 10-13(Floridablanca)</h4>
+							<span class="image main"><img src="images/VIGILANCIA1.png" alt="" /></span>
+							<h4>Estación la ciudadela Calle de los estudiantes 9 – 333 (Bucaramanga)</h4>
+							<span class="image main"><img src="images/VIGILANCIA2.png" alt="" /></span>
+							<h4>Estación lagos del cacique transversal oriental lagos del cacique (Bucaramanga)</h4>
+							<span class="image main"><img src="images/VIGILANCIA3.png" alt="" /></span>
+							<h4>Estación San Francisco Bucaramanga Carrera 27 No 29-69 Bucaramanga</h4>
+							<span class="image main"><img src="images/VIGILANCIA4.png" alt="" /></span>
+							<h4>resumencdatos faltantes</h4>
+							<span class="image main"><img src="images/faltantes1.JPG" alt="" /></span>
+							<span class="image main"><img src="images/faltantes2.JPG" alt="" /></span>
+							<h3>COMPLETAR LOS DATOS DE PM10 Y PM2.5</h3>
+							<h4>NAR</h4>
+							<span class="image main"><img src="images/extNAR.png" alt="" /></span>
+							<span class="image main"><img src="images/extNAR1.png" alt="" /></span>
+							<span class="image main"><img src="images/NAR1.png" alt="" /></span>
+							<span class="image main"><img src="images/NAR2.png" alt="" /></span>
+
+							<h4>NARX</h4>
+							<span class="image main"><img src="images/extNARX.png" alt="" /></span>
+							<span class="image main"><img src="images/extNARX1.png" alt="" /></span>
+							<span class="image main"><img src="images/NARX1.png" alt="" /></span>
+							<span class="image main"><img src="images/NARX2.png" alt="" /></span>
+
+							<h4>NO LINEAL INPUT LINEAL OUTPUT</h4>
+							<span class="image main"><img src="images/extNON.png" alt="" /></span>
+							<span class="image main"><img src="images/extNON1.png" alt="" /></span>
+							<span class="image main"><img src="images/NON1.png" alt="" /></span>
+							<span class="image main"><img src="images/NON2.png" alt="" /></span>
+
+							<h3>MODELO SELECCIONADO</h3>
+							<p>según el error cuadrático medio de los modelos implementados se decidió seleccionar: <br>
+								MODELO NARX<br>
+								TRAINLM<br>
+								25 NEURONAS EN LA CAPA OCULTA<br>
+								El modelo seleccionado fue usado para completar los datos para PM10 y PM2.5
+							</p>
+							<p>•	el punto azul indica los valores reales con los que se entrenó el modelo <br>
+								•	la cruz azul indica los valores reales con los que se calificó el modelo <br>
+								•	el punto verde y rojo indica los valores reales con los que se contrasto el entrenamiento del modelo <br>
+								•	la cruz verde y roja indica los valores reales con los que se calificó el conjunto de validación y testeo del modelo <br>
+								•	la línea naranja indica el error que hay entre los valores reales y los valores predichos por el modelo
+							</p>
+							<span class="image main"><img src="images/ICACOMPLETO1.png" alt="" /></span>
+							<h4>PM10 Y PM2.5 DIARIO BUCARAMANGA </h4>
+							<p>Debido a que la normativa del ICA esta descrita para clasificar según el día. Se utilizó el modelo para completar los datos tanto para PM10 como PM2.5. seguido a esto se encontró el valor promedio de material particulado de horas a día para poder clasificarlo según la norma de ICA los cuales se pueden visualizar en la ilustración en donde el eje X hace referencia a la muestra diaria empezando desde el 01 de octubre del 2018 y el eje e indica el valor de material particulado como se ve en la gráfica la línea azul indica los valores de PM10 y la línea naranja los valores de PM2.5 en general en la ciudad de Bucaramanga</p>
+							<h4>ICA DIARIO</h4>
+							<p>Haciendo uso de la resolución 2254 de 2017 la cual indica la calidad del aire según los niveles de material particulado en el ambiente se desarrolló un algoritmo en Matlab que clasifica los valores de PM10 y PM2.5 para indicar el índice de calidad del aire en sus diferentes niveles de clasificación estos resultados se detallan en la ilustración en el eje x se representa el día y en el eje y el valor.
+								<br>1-Buena
+								<br>2- Moderada
+								<br>3- Dañina/ Grupos sensibles
+								<br>4- Dañina para la salud
+								<br>5- muy dañina para la salud
+							</p>
+							<span class="image main"><img src="images/ICACOMPLETO2.png" alt="" /></span>
+							<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1AynGWwB_MJZ_VYepmixmzo_AvtnDWeUaQtTYJafsehw/edit?usp=sharing"></iframe>
+							<span class="image main"><img src="" alt="" /></span>
+							<span class="image main"><img src="images/ICACOMPLETO3.png" alt="" /></span>
+							<p>Histograma para los diferentes valores de ICA según su frecuencia en los días que se ven lo que permite identificar que en Bucaramanga por lo general la calidad del aire es Buena y Moderada la mayoría de días, pero en algunas épocas se hace dañina para la salud siendo indicado por los valores 3 y 4 de ICA</p>
+							<span class="image main"><img src="images/ICACOMPLETO.png" alt="" /></span>
+						</article>
+
+						<!-- tweeter -->
+						<article id="tweeter">
+							<h2 class="major">PUBLICACIONES EN TWEETER</h2>
+							<h3>EXTRAER TWEETS</h3>
+							<h4>API TWITER</h4>
+							<h4>OCTOPARSE</h4>
+							<h4>TWINT</h4>
+							<p>las características de cada Tweet extraído son: <br>
+								•	fecha	<br>
+								•	hora exacta<br>
+								•	tweet	<br>
+								•	hora	<br>
+								•	día	<br>
+								•	mes	<br>
+								•	año	<br>
+								•	longitud Tweet<br>
+								•	hashtags<br>
+								•	mentiones<br>
+								•	num_hashtags<br>
+								•	num_mentiones<br>
+								•	ICA REAL<br>
+								Estos datos son estructurados en una tabla de Excel que permite su fácil visualización en total se extrajeron 852 Tweets entre 01/oct/2018 y 12/oct/2020
+								</p>
+							<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1E6aYcyx6V_SqhzvTh6CcMCdd5C5uxvnwA0-IDQ7Lg20/edit?usp=sharing"></iframe>
+							<h3>LIMPIEZA DE TWEETS</h3>
+							<p>
+								las palabras seleccionadas para la limpieza de stop Word fueron: <br>
+								['abril', 'actualmente', 'acuerdo', 'adelante', 'además', 'además', 'adrede', 'afirmó', 'agosto', 'agregó', 'ahí', 'ahora', 'ahí', 'aire', 'al', 'algo', 'alguna', 'algunas', 'alguno', 'algunos', 'algún', 'allí', 'allí', 'alrededor', 'ambos', 'empleamos', 'amable', 'antaño', 'antaño', 'ante', 'anterior', 'antes', 'apenas', 'aproximadamente', 'aquel', 'aquella', 'aquellas', 'aquello', 'aquellos', 'aquí', 'aquél', 'aquélla', 'aquéllas', 'aquéllos', 'aquí', 'arriba', 'arriba abajo', 'as', 'aseguró', 'así', 'así', 'atrás', 'aun', 'aunque', 'ayer', 'añadió', 'aún', 'bajo', 'bastante', 'bien', 'Bogotá', 'breve', 'Bucaramanga', 'buen', 'buena', 'buenas', 'bueno', 'buenos', 'cada', 'calidad', 'casi', 'cerca', 'cierta', 'ciertas', 'cierto', 'ciertos', 'cinco', 'claro', 'comentó', 'como', 'con', 'conmigo', 'conocer', 'conseguimos', 'conseguir', 'considera', 'consideró', 'consigo', 'consigue', 'consiguen', 'consigues', 'contigo', 'contra', 'cosas', 'creo', 'cual', 'cuales', 'cualquier', 'cuando', 'cuanta', 'cuantas', 'cuanto', 'cuantos', 'cuatro', 'cuenta', 'cuál', 'cuáles', 'cuándo', 'cuánta', 'cuántas', 'cuánto', 'cuántos', 'cómo', 'da', 'dado', 'dan', 'dar', 'de', 'debajo', 'debe', 'deben', 'debido', 'decir', 'dejó', 'del', 'delante', 'demasiado', 'demás', 'dentro', 'deprisa', 'desde', 'despacio', 'después', 'después', 'detrás', 'detrás', 'día', 'días', 'dice', 'dicen', 'dicho', 'dieron', 'diferente', 'diferentes', 'dijeron', 'dijo', 'dio', 'donde', 'dos', 'durante', 'día', 'días', 'dónde', 'ejemplo', 'el', 'ella', 'ellas', 'ello', 'ellos', 'embargo', 'empleáis', 'emplean', 'emplear', 'empleas', 'empleo', 'en', 'encima', 'encuentra', 'enero', 'enfrente', 'enseguida', 'entonces', 'entre', 'era', 'éramos', 'eran', 'eras', 'eres', 'es', 'esa', 'esas', 'ese', 'eso', 'esos', 'esta', 'estaba', 'estaban', 'estado', 'estados', 'estáis', 'estamos', 'están', 'estar', 'estará', 'estas', 'este', 'esto', 'estos', 'estoy', 'estuvo', 'está', 'están', 'ex', 'excepto', 'existe', 'existen', 'explicó', 'expresó', 'febrero', 'fin', 'final', 'fue', 'fuera', 'fueron', 'fui', 'fuimos', 'general', 'gran', 'grandes', 'gta.', 'gueno', 'ha', 'haber', 'había', 'habla', 'hablan', 'habrá', 'había', 'habían', 'hace', 'hacéis', 'hacemos', 'hacen', 'hacer', 'hacerlo', 'haces', 'hacia', 'haciendo', 'hago', 'han', 'hasta', 'hay', 'haya', 'he', 'hecho', 'hemos', 'hicieron', 'hizo', 'horas', 'hoy', 'hubo', 'igual', 'incluso', 'índice', 'indicó', 'informo', 'informó', 'intenta', 'intentáis', 'intentamos', 'intentan', 'intentar', 'intentas', 'intento', 'ir', 'julio', 'junio', 'junto', 'la', 'lado', 'largo', 'las', 'le', 'lejos', 'les', 'llegó', 'lleva', 'llevar', 'lo', 'los', 'luego', 'lugar', 'mal', 'manera', 'manifestó', 'marzo', 'mas', 'mayo', 'mayor', 'me', 'Medellín', 'mediante', 'medio', 'mejor', 'mencionó', 'menos', 'menudo', 'metropolitana', 'mi', 'mía', 'mías', 'mientras', 'mío', 'míos', 'mis', 'misma', 'mismas', 'mismo', 'mismos', 'modo', 'momento', 'mucha', 'muchas', 'mucho', 'muchos', 'muy', 'más', 'mí', 'mía', 'mías', 'mío', 'míos', 'nada', 'nadie', 'ni', 'ninguna', 'ningunas', 'ninguno', 'ningunos', 'ningún', 'no', 'nos', 'nosotras', 'nosotros', 'nuestra', 'nuestras', 'nuestro', 'nuestros', 'nueva', 'nuevas', 'nuevo', 'nuevos', 'nunca', 'ocho', 'os', 'otra', 'otras', 'otro', 'otros', 'país', 'para', 'parece', 'parte', 'partir', 'pasada', 'pasado', 'país', 'peor', 'pero', 'pesar', 'poca', 'pocas', 'poco', 'pocos', 'podéis', 'podemos', 'poder', 'podría', 'podríais', 'podríamos', 'podrían', 'podrías', 'podrá', 'podrán', 'podría', 'podrían', 'poner', 'por', 'porque', 'posible', 'primer', 'primera', 'primero', 'primeros', 'principalmente', 'pronto', 'propia', 'propias', 'propio', 'propios', 'próximo', 'próximo', 'próximos', 'pudo', 'pueda', 'puede', 'pueden', 'puedo', 'pues', 'que', 'que', 'quedó', 'queremos', 'quien', 'quienes', 'quiere', 'quizá', 'quizás', 'quizá', 'quizás', 'quién', 'quiénes', 'qué', 'raras', 'rea', 'realizado', 'realizar', 'realizó', 'repente', 'respecto', 'sabe', 'sabéis', 'sabemos', 'saben', 'saber', 'sabes', 'salvo', 'se', 'sea', 'sean', 'según', 'segunda', 'segundo', 'según', 'seis', 'septiembre', 'ser', 'será', 'será', 'serán', 'sería', 'señaló', 'si', 'sido', 'siempre', 'siendo', 'siete', 'sigue', 'siguiente', 'sin', 'sino', 'sobre', 'sois', 'sola', 'solamente', 'solas', 'solo', 'solos', 'somos', 'son', 'soy', 'soyos', 'su', 'supuesto', 'sus', 'suya', 'suyas', 'suyo', 'sé', 'sí', 'sólo', 'tal', 'también', 'también', 'tampoco', 'tan', 'tanto', 'tarde', 'te', 'temprano', 'tendrá', 'tendrán', 'tenéis', 'tenemos', 'tener', 'tenga', 'tengo', 'tenido', 'tenía', 'tercera', 'ti', 'tiempo', 'tiene', 'tienen', 'toda', 'todas', 'todavía', 'todavía', 'todo', 'todos', 'total', 'trabaja', 'trabajáis', 'trabajamos', 'trabajan', 'trabajar', 'trabajas', 'trabajo', 'tras', 'trata', 'través', 'tres', 'tu', 'tus', 'tuvo', 'tuya', 'tuyas', 'tuyo', 'tuyos', 'tú', 'ultimo', 'un', 'una', 'unas', 'uno', 'unos', 'usa', 'usáis', 'usamos', 'usan', 'usar', 'usas', 'uso', 'usted', 'ustedes', 'va', 'vais', 'valor', 'vamos', 'van', 'varias', 'varios', 'vaya', 'veces', 'ver', 'verdad', 'verdadera', 'verdadero', 'vez', 'vosotras', 'vosotros', 'voy', 'vuestra', 'vuestras', 'vuestro', 'vuestros', 'ya', 'yo', 'él', 'ésa', 'ésas', 'ése', 'ésos', 'ésta', 'éstas', 'éste', 'éstos', 'última', 'últimas', 'último', 'últimos']
+							</p>
+							<h3>CONTAR EL NÚMERO DE PALABRAS (VARIABLES) EN CADA TWEET</h3>
+							<p>En esta etapa se desarrolló un algoritmo que contaba las palabras únicas y las separaba. Seguido a esto recorría cada Tweet y contaba el número de veces que la palabra hace parte del texto la ilustración 21 muestra un ejemplo de cómo se estructuran las palabras en total fueron 2739 palabras diferentes</p>
+							<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1bCwmaPpXSiMcIP0sQvbOuxCcmhfcMItmqA4MsXWLdew/edit?usp=sharing"></iframe>
+							<p>Debido a que muchas de las palabras estaban presentes en muy pocos Tweets se escogió un lumbral mínimo de frecuencia en la palabra para que la palabra sea tenida en cuenta este umbral es que aparezca en al menos el 1% de los Tweets lo que termina dejando 194 palabras las palabras a escoger son:</p>
+							<p>área	mala	ambiental	placa	pico	mejorar	estaciones	ciudad	más	salud	alerta	rango	está	monitoreo	contaminación	según	condiciones	su	sobre	día	hora2	días	buena	sin	girón	local	bogotá	dañino	floridablanca	todos	-_-	indice	moderado	son	marzo	sigue	mejora	resultados	medidas	medellín	medición	esta	deterioro	ambiente	cinco	están	mejoró	estado	hoy	ha	medida	durante	ciudades	mediciones	niveles	hay	amb	autoridades	alcalde	vehículos	pero	medio	nos	también	nuestra	mes	bueno	reporte	si	riesgo	lluvias	pese	entre	mejor	dos	material	prevención	público	transporte	mantiene	particulado	ambientales	debe	han	desde	así	qué	vida	cuatro	ciudadanos	carro	--	eso	cuando	ahora	contaminantes	buses	semana	sus	ya	último	solo	partir	fue	respiramos	control	esto	porque	árboles	últimos	hace	tiene	movilidad	incendios	naranja	alcaldía	sistema	pm	preocupación	aunque	vía	mejoría	índice	muy	le	cuarentena	ante	decisiones	ser	febrero	decretan	rojo	mayo	hacer	proyecto	concentraciones	sensibles	estos	preocupa	problemas	debido	tomar	siendo	zonas	decir	red	excelente	tiempo	mayor	pésima	vamos	estamos	grupos	noticias	foro	va	acciones	tenemos	habrá	personas	reportan	acuerdo	mejorado	tema	país	tendencia	enfermedades 	puede	▶️	bicicleta	estación	semanas	ver	lagos	lunes	mantuvo	registra	gracias	reciente	arrojaron	cada	empeoró	atmosférica	sino	problema	tienen	alarmas	coronavirus	gente	situación	moderada	vigilancia	arrojó</p>
+							<p>Cada una de las palabras va a corresponder a una variable para ser empleada en el clasificador las otras variables a agregar van a ser metadatos específicos de cada Tweet (hora, día, mes, año, longitud Tweet, num_hashtags y num_mentiones). Es necesario hacer un cruce de Tablas entre el índice de calidad del aire y el Tweet para saber la clasificación según las publicaciones que se hacían lo que se puede ver </p>
+							<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1yVlnKE7PdK4QqACB3HFMv0JaUq6EI1LVN1_HL-dLucY/edit?usp=sharing"></iframe>
+						</article>
+
+						<!-- redux -->
+						<article id="redux">
+							<h2 class="major">ETAPA 5 <br>ELIMINAR PALABRAS QUE<br>PROVOCAN RUIDO EN EL <br>CLASIFICADOR</h2>
+							<h3>FSCNCA</h3>
+							<p>el Algoritmo de FSCNCA indica los pesos que le dan las variables según las etiquetas entre mayor es el peso de la variable mayor efecto hace en el clasificador por tal motivo se pone una región de tolerancia para seleccionar las variables. La región de Tolerancia escoge todos los pesos de las variables que tengan un peso mayor a 0.1 la ilustración 23 grafica el peso de importancia que se le otorga a cada palabra permitiendo filtrarlas</p>
+							<span class="image main"><img src="images/fscnca.png" alt="" /></span>
+							<p>la tabla 6 describe el índice de la palabra y la palabra que fueron seleccionadas por el modelo de selección de características FSCNCA</p>
+								<h4>FSCNCA ANÁLISIS DISCRIMINANTE</h4>
+								<p>con las palabras seleccionadas por FSCNCA indicadas en la Tabla 6 se aplica un clasificador de Análisis Discriminante Diaglinear 30 veces variando sus conjuntos de training validation y test los resultados de cada RUN están descritos en la tabla 7</p>
+								<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1lCkGReknooqQtcJ__SO0MtdcT5hoe2gg4vdWLMUmTGM/edit?usp=sharing"></iframe>
+								<h4>FSCNCA REDES NEURONALES</h4>
+								<p>con las palabras seleccionadas por FSCNCA indicadas en la Tabla 6 se aplica un clasificador de Redes neuronales 30 veces variando sus conjuntos de training validation y test los resultados de cada RUN están descritos en la tabla 9</p>
+								<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1oeCyIyn2YhRYPqFh7UhHgtM4ek-hkHNZkRYoypJr0qM/edit?usp=sharing"></iframe>
+
+								<h3>FORWARD SELECTION</h3>
+							<p>el Algoritmo de FORWARD SELECTION organiza las variables según el orden de importancia que le da el clasificador. Debido a que se utilizan dos clasificadores diferentes el algoritmo de forward debe ser adaptado para cada clasificador en específico aumentando las variables según el orden de importancia que el clasificador le da con el objetivo de aumentar el porcentaje de clasificación para los conjuntos de validation y test</p>
+							<span class="image main"><img src="images/forwardADL.png" alt="" /></span>
+							<p>Las palabras que aparecen en la ilustración 25 se organizan según la importancia que le da el clasificador para mantener el mayor porcentaje de validation y test la tabla 11 resume en la primera columna el número que se le otorga en la ilustración 25 a cada palabra la columna 3 indica la variable según la posición anterior que tenía y las 3 últimas columnas indican el porcentaje de clasificación en los conjuntos de training validation y test</p>
+
+								<h4>FORWARD SELECTION ANÁLISIS DISCRIMINANTE</h4>
+								<p>La ilustración 25 describe la evolución que tiene el clasificador de Análisis discriminante lineal según el número de variables que utiliza en el eje x dice el número de variables que son usadas para cada etapa de clasificación en el eje e indica el porcentaje de Accuracy que tiene el clasificador </p>
+								<span class="image main"><img src="images/forwardADL.png" alt="" /></span>
+								<p>Las palabras que aparecen en la ilustración 25 se organizan según la importancia que le da el clasificador para mantener el mayor porcentaje de validation y test la tabla 11 resume en la primera columna el número que se le otorga en la ilustración 25 a cada palabra la columna 3 indica la variable según la posición anterior que tenía y las 3 últimas columnas indican el porcentaje de clasificación en los conjuntos de training validation y test</p>
+								<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1a_gEbrEnlPgxXEz4TT-UG46Rg56f7afJ3qaXliqdCYM/edit?usp=sharing"></iframe>
+
+								<h4>FORWARD SELECTION REDES NEURONALES</h4>
+								<p>La ilustración 26 describe la evolución que tiene el clasificador de redes neuronales con 30 neuronas según el número de variables que utiliza. El eje X representa el número de variables que son usadas para cada etapa de clasificación y el eje Y representa el porcentaje de Accuracy que tiene el clasificador </p>
+								<span class="image main"><img src="images/forwardNN.png.jpg" alt="" /></span>
+								<p>Las palabras que aparecen en la ilustración 26 se organizan según la importancia que le da el clasificador para mantener el mayor porcentaje de validation y test la tabla 12 resume en la primera columna el número que se le otorga en la ilustración 26 la columna 3 indica la variable según la posición anterior que tenía y las 3 últimas columnas indican el porcentaje de clasificación en los conjuntos de training validation y test</p>
+								<iframe  width="550" height="600" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1vMu5D2rBKdo6MEywnF6kxZI6cLdO_455Ys0hybd3p1U/edit?usp=sharing"></iframe>
+
+						</article>
+
+						<!-- modelo -->
+						<article id="modelo">
+							<h2 class="major">ETAPA 6 MODELO DE CLASIFICACIÓN</h2>
+							<span class="image main"><img src="images/result.png" alt="" /></span>
+							<p>para seleccionar el modelo de clasificación final se comparan los resultados de las técnicas re reducción de dimensionalidad con sus respectivos clasificadores. Según él % de clasificación en el conjunto de validation se escoge el modelo final a implementarse para la clasificación de Calidad del aire según los Tweets. La tabla 13 describe los resultados de los modelos implementados de reducción de dimensionalidad con sus respectivos clasificadores. El modelo que se seleccionó para implementar fue el clasificador de Análisis Discriminante Lineal con las variables seleccionadas por FSCNCA [área, ambiental, placa pico, mejorar, ciudad, salud, rango, monitoreo, contaminación, su, sobre, día, hora, girón, local, Bogotá, dañino, todos, -_-, índice, moderado, son, sigue, mejora, medidas, esta, deterioro, ha, mes, bueno, ``, público, ambientales, ciudadanos, cuando, cada]</p>
+							<h3>MATRIZ DE CONFUSION PARA EL MODELO SELECCIONADO</h3>
+							<span class="image main"><img src="images/confusion.png" alt="" /></span>
+							<p>
+								El objetivo fundamental de esta tesis era abordar el problema de obtención de un modelo que permita clasificar la calidad del aire en base a los comentarios realizados en Twitter y aporta una solución para el proceso de identificación de palabras relevantes en los modelos de clasificación de Análisis Discriminante y Redes Neuronales
+								<br>Así pues, la aportación principal de este proyecto consiste en el diseño e implementación de una metodología para el trabajo en el área del procesamiento de lenguaje natural para la empresa K2 ingeniería. Los algoritmos diseñados en esta tesis, además de ser novedosos aumentan las posibilidades para trabajar con cualquier tipo de Tema en Twitter en donde la variable objetivo este siendo muestreada. Las conclusiones que se derivan del trabajo son las que se exponen a continuación
+								<br>Debido a que los datos de material particulado en Bucaramanga eran incompletos el modelo de redes neuronales NARX pudo completar los datos dando unos resultados muy buenos en comparación del NAR y NON linear con un mse de 20
+								<br>Gracias a las fechas de muestreo de datos y los Tweets se pudieron cruzar las tablas para saber el ICA real en Bucaramanga en el momento que se realizaban los diferentes Tweets
+								<br>El modelo de reducción de dimensionalidad escogido fue FSCNCA que selecciono las siguientes palabras para el clasificador [área, ambiental, placa pico, mejorar, ciudad, salud, rango, monitoreo, contaminación, su, sobre, día, hora, girón, local, Bogotá, dañino, todos, -_-, índice, moderado, son, sigue, mejora, medidas, esta, deterioro, ha, mes, bueno, ``, público, ambientales, ciudadanos, cuando, cada]
+								<br>Se genero un modelo de contaminación del aire usando las publicaciones realizadas por las personas en Bucaramanga a partir de datos extraídos en Twitter con una clasificación del 0.69±0.02 si se utilizara un clasificador aleatorio la posibilidad hubiese sido de 1/numeroClases  
+							</p>
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Proyecto de grado 2021 Kevin Alejandro Naranjo Reyes</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
